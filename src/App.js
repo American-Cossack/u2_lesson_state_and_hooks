@@ -1,5 +1,6 @@
-import Tasks from './Tasks'
-import Input from './Input'
+import Tasks from './components/Tasks'
+import Input from './components/Input'
+import './styles/App.css'
 
 const App = () => {
 

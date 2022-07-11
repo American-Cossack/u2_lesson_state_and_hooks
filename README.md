@@ -245,7 +245,7 @@ In your `Input.jsx` wire the `addTask` function to the button provided:
 const Input = (props) => {
   
   return (
-    <div className="tasks">
+    <div>
       <label>Input Task: </label>
       <input type="text" name="task" />
       <button className="add-button" onClick={props.addTask}>Add</button>
@@ -266,7 +266,7 @@ It accepts an argument of what we want to set a specific state to, the `setTasks
 
 ![Bravo](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F64.media.tumblr.com%2F5d5b7c004e5cff775da309ec580876b3%2Ftumblr_phwi528fPb1vlacsto1_500.gifv&f=1&nofb=1)
 
-## You Do
+## You Do (20 minutes)
 
 Implement the following steps:
 - STEP 1: We're going to create a new task utilizing the `Input` component. We want the user to be able to type a new task into our input field and when they click "Add", it get's added to the list.
