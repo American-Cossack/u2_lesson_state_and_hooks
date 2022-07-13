@@ -359,7 +359,7 @@ In order to pass in our **index**, we have to add parentheses to our **removeTas
 
 ![Yay](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fimages%2F9257ba2e05056ada8d18ee40a7a1b945%2Ftenor.gif%3Fitemid%3D19236972&f=1&nofb=1)
 
-Back in `TodoList.jsx` we simply need to pass the **index** in as an argument to our **removeTask** function. Like this...
+Back in `App.js` we simply need to pass the **index** in as an argument to our **removeTask** function. Like this...
 ```js
 const removeTask = (index) => {
   let list = [...tasks]
@@ -367,12 +367,12 @@ const removeTask = (index) => {
 }
 ```
 
-Now we can use our `manageTasks` method from our *useState* hook to modify the state...
+Now we can use our `setTasks` method from our *useState* hook to modify the state...
 ```js
 const removeTask = (index) => {
   let list = [...tasks]
   list.splice(index, 1)
-  manageTasks(list)
+  setTasks(list)
 }
 ```
 
