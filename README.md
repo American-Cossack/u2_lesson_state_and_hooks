@@ -268,14 +268,14 @@ It accepts an argument of what we want to set a specific state to, the `setTasks
 
 ## You Do (20 minutes)
 
-Implement the following steps:
-- STEP 1: We're going to create a new task utilizing the `Input` component. We want the user to be able to type a new task into our input field and when they click "Add", it get's added to the list.
-- STEP 2: You will need another `useState` in your `App.js` to track the state of the changing value of our input field. Set up that `useState` right below our `tasks` one.
-- STEP 3: The `handleChange` function is there to facilitate that ongoing change after each keystroke. What can we use to update our new state from the previous step?
-- STEP 4: We've already got `event` as a parameter. Must be for a reason. How can we leverage the `event` object to get something we can set our new state to on change? (check [here](https://developer.mozilla.org/en-US/docs/Web/API/Event/target))
-- STEP 5: We'll need to wire up our `handleChange` function to our input field (check out the [onChange](https://www.w3schools.com/jsref/event_onchange.asp) property). Remember, we just passed the function as a prop to our `Input.jsx` component!
-- STEP 6: We should be able to add the newly typed task to our `tasks` state. Half of this has already been done for you, but it might be smart to replace that hardcoded string with something more... variable...
-- STEP 7: After we add a new task, wouldn't it be nice to have our input field clear? To do that, our `Input.jsx` component is going to need access to our state we made in Step 2 (check out the [value](https://www.w3schools.com/tags/att_input_value.asp) property)
+Implement the following steps, IN ORDER. It may help to read through them all first and then start at Step 1. We're going to create a new task utilizing the `Input` component. We want the user to be able to type a new task into our input field and when they click "Add", it get's added to the list. These steps will get us there.
+
+- STEP 1: You will need another `useState` in your `App.js` to track the state of the changing value of our input field. Set up that `useState` right below our `tasks` one.
+- STEP 2: The `handleChange` function is there to facilitate that ongoing change after each keystroke. What can we use to update our new state from the previous step?
+- STEP 3: We've already got `event` as a parameter. Must be for a reason. How can we leverage the `event` object to get something we can set our new state to on change? (check [here](https://developer.mozilla.org/en-US/docs/Web/API/Event/target))
+- STEP 4: We'll need to wire up our `handleChange` function to our input field (check out the [onChange](https://www.w3schools.com/jsref/event_onchange.asp) property). Remember, we just passed the function as a prop to our `Input.jsx` component!
+- STEP 5: We should be able to add the newly typed task to our `tasks` state. Half of this has already been done for you, but it might be smart to replace that hardcoded string with something more... variable...
+- STEP 6: After we add a new task, wouldn't it be nice to have our input field clear? To do that, our `Input.jsx` component is going to need access to our state we made in Step 2 (check out the [value](https://www.w3schools.com/tags/att_input_value.asp) property)
 
 ## Removing a Task
 So now we can add tasks to our ToDo list. Bangarang! But what if we want to remove a task from the list?  Let's code that together!
